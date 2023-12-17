@@ -1,16 +1,24 @@
 {
-  "name": "test-server-ts",
+  "name": "@teelyjc/typescript-boilerplate",
   "version": "1.0.0",
-  "scripts": {},
-  "license": "ISC",
-  "dependencies": {
-    "@types/node": "^20.10.4",
-    "typescript": "^5.3.3"
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "dev": "nodemon -q"
   },
+  "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.10.4",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "eslint": "^8.56.0",
-    "eslint-plugin-import": "^2.29.1"
+    "eslint-plugin-import": "^2.29.1",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.8",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "winston": "^3.11.0"
   }
 }
